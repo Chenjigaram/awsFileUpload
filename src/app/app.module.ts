@@ -16,8 +16,7 @@ import { DialogComponent } from './dialog/dialog.component';
   ],
   entryComponents: [DialogComponent],
   imports: [
-    BrowserModule,
-    AppRoutingModule,routing,FormsModule,
+    BrowserModule,FormsModule,
     BrowserAnimationsModule,MaterialModules
   ],
   providers: [AWSService],

@@ -813,16 +813,13 @@ Apache-2.0
 @angular/core
 MIT
 
+@angular/animations
+MIT
+
 @angular/common
 MIT
 
 @angular/platform-browser
-MIT
-
-@angular/router
-MIT
-
-@angular/animations
 MIT
 
 @angular/cdk
@@ -865,11 +862,11 @@ MIT
 
 @angular/material/snack-bar
 
+@angular/material/toolbar
+
 @angular/material/card
 
 @angular/material/progress-spinner
-
-@angular/material/toolbar
 
 core-js
 MIT
