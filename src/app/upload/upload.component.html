@@ -1,5 +1,24 @@
-<p>
-  upload works!
-</p>
-<label for="imageUpload">Image Upload</label>
-<input type="file" (change)="fileEvent($event)" name="imageUpload" id="imageUpload"/>
+<h3>
+  upload Image
+</h3>
+<mat-card>
+    <mat-card-header *ngIf="image">
+      <mat-card-title>Uploaded Image</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image *ngIf="image" [src]="image" alt="Uploaded Image">
+    <mat-card-actions *ngIf="uploadStart">
+        <mat-progress-spinner
+        style="margin-left: 38%"
+        color="primary"
+        mode="determinate"
+        [value]="progressBar">
+    </mat-progress-spinner>
+    </mat-card-actions>
+    <mat-card-actions *ngIf="!uploadStart">
+        <div class="upload-btn-wrapper">
+          <button mat-raised-button  color="primary">Upload</button>
+          <input  type="file" (change)="fileEvent($event)" accept="image/*"  name="imageUpload" id="imageUpload"/>
+          <button mat-raised-button *ngIf="image" color="accent" (click)="uploadImage()">SUBMIT</button>
+        </div>
+    </mat-card-actions>
+  </mat-card>

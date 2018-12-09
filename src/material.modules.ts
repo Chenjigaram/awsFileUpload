@@ -84,4 +84,4 @@ import {
     ScrollingModule,
   ]
 })
-export default class MaterialModules {}
+export class MaterialModules {}
