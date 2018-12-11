@@ -22,3 +22,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     bottom: 0;
     position: fixed;
 }
+ font-size: xx-small;
+}
+.mat-card-image:first-child {
+    margin-top: 0 !important
+}
